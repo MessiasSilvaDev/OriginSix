@@ -1,23 +1,47 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- PAGE INFO -->
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OriginSix</title>
+
+    <!-- ICONS -->
+    <link rel="stylesheet" href="./assets/fonts/style.css" />
+
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- STYLES -->
     <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- SCRIPTS -->
+    <script src="./index.js" defer></script>
   </head>
   <body>
     <header id="header">
       <nav class="container">
         <a class="logo" href="" lang="en">beauty<span>salon</span>.</a>
-        <div class="menu">...</div>
+
+        <!-- menu -->
+        <div class="menu">
+          <ul class="grid">
+            <li><a class="title" href="#home">Início</a></li>
+            <li><a class="title" href="#about">Sobre</a></li>
+            <li><a class="title" href="#services">Serviços</a></li>
+            <li><a class="title" href="#testimonials">Depoimentos</a></li>
+            <li><a class="title" href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <i class="toggle icon-menu"></i>
+        <i class="toggle icon-close"></i>
+        <!-- /menu -->
       </nav>
     </header>
 
@@ -26,12 +50,12 @@
         <div class="container grid">
           <div class="image">
             <img
-              src="./assets/images/adam-winger-WXmHwPcFamo-unsplash.jpg"
+              src="./assets/images/image1.jpg"
               alt="Mulher sorrindo penteando outra mulher"
             />
           </div>
           <div class="text">
-            <h1>Saúde natural para os seus cabelos</h1>
+            <h2 class="title">Saúde natural para os seus cabelos</h2>
             <p>
               Um salão exclusivo em São Paulo, especializado em tratamentos
               naturais.
@@ -43,8 +67,85 @@
 
       <div class="divider-1"></div>
 
-      <section class="section">
-        <div class="container">outra section</div>
+      <section class="section" id="about">
+        <div class="container grid">
+          <div class="image">
+            <img src="./assets/images/image2.jpg" alt="3 mulheres sorrindo" />
+          </div>
+          <div class="text">
+            <h2 class="title">Sobre nós</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+              blanditiis libero totam ducimus maxime eligendi nulla esse.
+              Corrupti, quasi, sint voluptatibus dignissimos corporis dolor in
+              commodi eveniet nulla ab aspernatur!
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
+              atque ipsam ipsa facere inventore est, ex dolores, sequi
+              architecto sunt quos voluptatibus. Aliquid eum aliquam hic nihil
+              nemo ipsam repellendus.
+            </p>
+            <br />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatem, in dolore ducimus, ullam alias voluptates iure
+              molestias aperiam reiciendis possimus quas nam ut? Veritatis ex
+              officia sunt dicta non ratione.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="divider-2"></div>
+
+      <section class="section" id="services">
+        <div class="container grid">
+          <header>
+            <h2 class="title">Serviços</h2>
+            <p>
+              Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
+              conquistou clientes de inúmeros países com seus tratamentos
+              exclusivos e totalmente naturais
+            </p>
+          </header>
+          <div class="cards grid">
+            <div class="card">
+              <i class="icon-woman-hair"></i>
+              <h3 class="title">Terapia capilar</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                sunt reprehenderit, nesciunt voluptas tempore cupiditate, esse
+                est sapiente laudantium reiciendis exercitationem eos,
+                distinctio autem corrupti consectetur explicabo necessitatibus
+                placeat sint.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-trim"></i>
+              <h3 class="title">Cortes</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                sunt reprehenderit, nesciunt voluptas tempore cupiditate, esse
+                est sapiente laudantium reiciendis exercitationem eos,
+                distinctio autem corrupti consectetur explicabo necessitatibus
+                placeat sint.
+              </p>
+            </div>
+            <div class="card">
+              <i class="icon-cosmetic"></i>
+              <h3 class="title">Tratamentos</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+                sunt reprehenderit, nesciunt voluptas tempore cupiditate, esse
+                est sapiente laudantium reiciendis exercitationem eos,
+                distinctio autem corrupti consectetur explicabo necessitatibus
+                placeat sint.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
