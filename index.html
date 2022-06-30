@@ -24,76 +24,91 @@
     />
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header id="header">
-      <nav class="container">
-        <a class="logo" href="" lang="en">beauty<span>salon</span>.</a>
+    <header class="main-header" id="header">
+      <nav class="main-nav main-container">
+        <a class="main-logo" href="#home" lang="en">
+          beauty<span class="salon">salon</span>.
+        </a>
 
         <!-- menu -->
         <div class="menu">
-          <ul class="grid">
-            <li><a class="title" href="#home">Início</a></li>
-            <li><a class="title" href="#about">Sobre</a></li>
-            <li><a class="title" href="#services">Serviços</a></li>
-            <li><a class="title" href="#testimonials">Depoimentos</a></li>
-            <li><a class="title" href="#contact">Contato</a></li>
+          <ul class="list grid-gap">
+            <li>
+              <a class="main-action main-title" href="#home">Início</a>
+            </li>
+            <li>
+              <a class="main-action main-title" href="#about">Sobre</a>
+            </li>
+            <li>
+              <a class="main-action main-title" href="#services">Serviços</a>
+            </li>
+            <li>
+              <a class="main-action main-title" href="#testimonials"
+                >Depoimentos</a
+              >
+            </li>
+            <li>
+              <a class="main-action main-title" href="#contact">Contato</a>
+            </li>
           </ul>
         </div>
 
-        <i class="toggle icon-menu"></i>
-        <i class="toggle icon-close"></i>
+        <i class="main-icon icon-menu toggle"></i>
+        <i class="main-icon icon-close toggle"></i>
         <!-- /menu -->
       </nav>
     </header>
 
     <main>
       <!-- HOME -->
-      <section class="section" id="home">
-        <div class="container grid">
-          <div class="image">
+      <section class="main-section main-home" id="home">
+        <div class="main-container grid-gap">
+          <div class="main-image">
             <img
               src="./assets/images/image1.jpg"
               alt="Mulher sorrindo penteando outra mulher"
             />
           </div>
           <div class="text">
-            <h2 class="title">Saúde natural para os seus cabelos</h2>
-            <p>
+            <h2 class="main-title">Saúde natural para os seus cabelos</h2>
+            <p class="paragraph">
               Um salão exclusivo em São Paulo, especializado em tratamentos
               naturais.
             </p>
-            <a class="button" href="#">Agendar um horário</a>
+            <a class="main-button" href="#">Agendar um horário</a>
           </div>
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="main-divider -one"></div>
 
       <!-- ABOUT -->
-      <section class="section" id="about">
-        <div class="container grid">
-          <div class="image">
+      <section class="main-section main-about" id="about">
+        <div class="main-container grid-gap">
+          <div class="main-image">
             <img src="./assets/images/image2.jpg" alt="3 mulheres sorrindo" />
           </div>
           <div class="text">
-            <h2 class="title">Sobre nós</h2>
-            <p>
+            <h2 class="main-title">Sobre nós</h2>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
               blanditiis libero totam ducimus maxime eligendi nulla esse.
               Corrupti, quasi, sint voluptatibus dignissimos corporis dolor in
               commodi eveniet nulla ab aspernatur!
             </p>
             <br />
-            <p>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel,
               atque ipsam ipsa facere inventore est, ex dolores, sequi
               architecto sunt quos voluptatibus. Aliquid eum aliquam hic nihil
               nemo ipsam repellendus.
             </p>
             <br />
-            <p>
+            <p class="paragraph">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               Voluptatem, in dolore ducimus, ullam alias voluptates iure
               molestias aperiam reiciendis possimus quas nam ut? Veritatis ex
@@ -103,39 +118,39 @@
         </div>
       </section>
 
-      <div class="divider-2"></div>
+      <div class="main-divider -two"></div>
 
       <!-- SERVICES -->
-      <section class="section" id="services">
-        <div class="container grid">
-          <header>
-            <h2 class="title">Serviços</h2>
+      <section class="main-section main-services" id="services">
+        <div class="main-container grid-gap">
+          <header class="header">
+            <h2 class="main-title">Serviços</h2>
             <p class="subtitle">
               Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já
               conquistou clientes de inúmeros países com seus tratamentos
               exclusivos e totalmente naturais
             </p>
           </header>
-          <div class="cards grid">
+          <div class="cards grid-gap">
             <div class="card">
-              <i class="icon-woman-hair"></i>
-              <h3 class="title">Terapia capilar</h3>
+              <i class="main-icon icon-woman-hair"></i>
+              <h3 class="main-title">Terapia capilar</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
                 sunt reprehenderit, nesciunt voluptas tempore cupiditate.
               </p>
             </div>
             <div class="card">
-              <i class="icon-trim"></i>
-              <h3 class="title">Cortes</h3>
+              <i class="main-icon icon-trim"></i>
+              <h3 class="main-title">Cortes</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
                 sunt reprehenderit, nesciunt voluptas tempore cupiditate.
               </p>
             </div>
             <div class="card">
-              <i class="icon-cosmetic"></i>
-              <h3 class="title">Tratamentos</h3>
+              <i class="main-icon icon-cosmetic"></i>
+              <h3 class="main-title">Tratamentos</h3>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
                 sunt reprehenderit, nesciunt voluptas tempore cupiditate.
@@ -145,25 +160,25 @@
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="main-divider -one"></div>
 
       <!-- TESTIMONIALS -->
-      <section class="section" id="testimonials">
-        <div class="container">
-          <header>
-            <h2 class="title">Depoimentos de quem já passou por aqui</h2>
+      <section class="main-section main-testimonials" id="testimonials">
+        <div class="main-container">
+          <header class="header">
+            <h2 class="main-title">Depoimentos de quem já passou por aqui</h2>
           </header>
           <div class="testimonials swiper">
             <div class="swiper-wrapper">
               <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
+                <blockquote class="main-blockquote">
+                  <p class="paragraph">
                     <span>&ldquo;</span>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Error suscipit tenetur iure facere nobis numquam minus
                     voluptas fugit animi in sed veniam odio placeat voluptatibus
                   </p>
-                  <cite>
+                  <cite class="cite">
                     <img
                       src="./assets/images/image3.jpg"
                       alt="Foto de Salomão Venega"
@@ -174,14 +189,14 @@
               </div>
 
               <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
+                <blockquote class="main-blockquote">
+                  <p class="paragraph">
                     <span>&ldquo;</span>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Error suscipit tenetur iure facere nobis numquam minus
                     voluptas fugit animi in sed veniam odio placeat voluptatibus
                   </p>
-                  <cite>
+                  <cite class="cite">
                     <img
                       src="./assets/images/image4.jpg"
                       alt="Foto de Paloma Souza"
@@ -192,14 +207,14 @@
               </div>
 
               <div class="testimonial swiper-slide">
-                <blockquote>
-                  <p>
+                <blockquote class="main-blockquote">
+                  <p class="paragraph">
                     <span>&ldquo;</span>
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Error suscipit tenetur iure facere nobis numquam minus
                     voluptas fugit animi in sed veniam odio placeat voluptatibus
                   </p>
-                  <cite>
+                  <cite class="cite">
                     <img
                       src="./assets/images/image5.jpg"
                       alt="Foto de Pedrinho Teixeira"
@@ -214,62 +229,68 @@
         </div>
       </section>
 
-      <div class="divider-2"></div>
+      <div class="main-divider -two"></div>
 
       <!-- CONTACT -->
-      <section class="section" id="contact">
-        <div class="container grid">
+      <section class="main-section main-contact" id="contact">
+        <div class="main-container grid-gap">
           <div class="text">
-            <h2 class="title">Entre em contato com a gente</h2>
-            <p>
+            <h2 class="main-title">Entre em contato com a gente</h2>
+            <p class="paragraph">
               Entre em contato com a Beautysalon, queremos tirar suas dúvidas,
               ouvir suas críticas e sugestões.
             </p>
             <a
               href="https://api.whatsapp.com/send?phone=+5511998456754&text=Oi! Gostaria de agendar um horário"
-              class="button"
+              class="main-button"
               target="_blank"
             >
-              <i class="icon-whatsapp"></i>Entrar em contato
+              <i class="main-icon icon-whatsapp"></i>Entrar em contato
             </a>
           </div>
 
           <div class="links">
-            <ul class="grid">
-              <li><i class="icon-phone"></i>11 99845-6754</li>
-              <li><i class="icon-map-pin"></i>R. Amauri Souza, 346</li>
-              <li><i class="icon-mail"></i>contato@beautysalon.com</li>
+            <ul class="list grid-gap">
+              <li><i class="main-icon icon-phone"></i>11 99845-6754</li>
+              <li>
+                <i class="main-icon icon-map-pin"></i>R. Amauri Souza, 346
+              </li>
+              <li>
+                <i class="main-icon icon-mail"></i>contato@beautysalon.com
+              </li>
             </ul>
           </div>
         </div>
       </section>
 
-      <div class="divider-1"></div>
+      <div class="main-divider -one"></div>
     </main>
 
-    <footer class="section">
-      <div class="container grid">
+    <footer class="main-section main-footer">
+      <div class="main-container grid-gap">
         <div class="brand">
-          <a class="logo logo-alt" href="#home">beauty<span>salon</span>.</a>
-          <p>©2021 Beautysalon.</p>
-          <p>Todos os direitos reservados.</p>
+          <a class="main-logo -alt" href="#home" lang="en">
+            beauty<span class="salon">salon</span>.
+          </a>
+          <p class="paragraph">©2021 Beautysalon.</p>
+          <p class="paragraph">Todos os direitos reservados.</p>
         </div>
         <div class="social">
-          <a href="https://instagram.com" target="_blank">
-            <i class="icon-instagram"></i>
+          <a class="link" href="https://instagram.com" target="_blank">
+            <i class="main-icon icon-instagram"></i>
           </a>
-          <a href="https://facebook.com" target="_blank">
-            <i class="icon-facebook"></i>
+          <a class="link" href="https://facebook.com" target="_blank">
+            <i class="main-icon icon-facebook"></i>
           </a>
-          <a href="https://youtube.com" target="_blank">
-            <i class="icon-youtube"></i>
+          <a class="link" href="https://youtube.com" target="_blank">
+            <i class="main-icon icon-youtube"></i>
           </a>
         </div>
       </div>
     </footer>
 
-    <a class="back-to-top" href="#home">
-      <i class="icon-rocket"></i>
+    <a class="main-backToTop" href="#home">
+      <i class="main-icon icon-rocket"></i>
     </a>
 
     <!-- SWIPER -->

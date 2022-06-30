@@ -56,19 +56,19 @@ const scrollReveal = ScrollReveal({
 });
 
 scrollReveal.reveal(
-  `#home .image, #home .text,
-#about .image, #about .text,
-#services header, #services .card,
-#testimonials header, #testimonials .testimonials,
+  `#home .main-image, #home .text,
+#about .main-image, #about .text,
+#services .header, #services .card,
+#testimonials .header, #testimonials .testimonials,
 #contact .text, #contact .links,
-footer .brand, footer .social
+.footer .brand, .footer .social
 `,
   { interval: 100 }
 );
 
 /* Botão voltar para o topo */
 
-const backToTopButton = document.querySelector(".back-to-top");
+const backToTopButton = document.querySelector(".main-backToTop");
 function backToTop() {
   if (window.scrollY >= 560) {
     backToTopButton.classList.add("show");
